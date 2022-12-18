@@ -1,0 +1,33 @@
+<html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <body>
+        <div class="container">
+        <h1 style="font-size: 50px; padding-left:200px; padding-top: 100px;"><%=title %></h1>
+        <a href="/add" class="btn btn-lg btn-primary" style="margin-left: 855px; margin-top: 20px; width: 250px;">Add Task</a><br><br>
+        
+        <table class="table table-dark table-stripped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th style="text-align: center; font-size: 25px;">TaskName</th>
+                 
+                    <th style="text-align: center; font-size: 25px;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% task.forEach(function(task){ %>
+                    <tr>
+                        <td><%=task.taskname %></td>
+                     
+                        <td style="text-align: center;">
+                            
+                            <a href="edit/<%= task.task_id %>" class="btn btn-sm btn-primary" style="margin-right: 10%; width:70px;">edit</a>
+                            <a href="delete/<%= task.task_id %>" class="btn btn-sm btn-danger" style="width:70px;">delete</a>
+                        </td>
+                    </tr>
+                    <% }); %>
+
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>
