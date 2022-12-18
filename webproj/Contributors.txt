@@ -1,0 +1,12 @@
+
+CONTRIBUTIONS:
+
+Jomel Calungsod - Did the work for implementing the Node modules
+                - Did the javascript file and using nodejs and express
+                - Did the user_index file
+                
+Thriezia May Lebosada - Did the small touch and edits
+                      - Did the add_task file
+
+Jordan Jorolan - Did the uploading of files to github and adding readme file
+               - Did the edit_task file
